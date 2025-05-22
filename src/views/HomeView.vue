@@ -148,7 +148,7 @@ import { homeData } from '../data/home';
 			</div>
 		</div>
 	</section>
-	<section class="bg-contact-main py-5 container-fluid">
+	<section class="bg-contact-main py-5">
 		<div class="pt-5 pb-5 text-center">
 			<h2 class="fw-bold display-1 text-color ">
 				¡Cóntactanos aquí!
