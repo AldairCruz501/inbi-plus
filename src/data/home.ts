@@ -59,7 +59,7 @@ export const homeData: HomeData = {
                 {
             nombre: "Diversión",
             canales: "50",
-            precio: "149",
+            precio: "249",
             img: "/img/pla-diversion.png"
         },
     ]

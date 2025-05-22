@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import CountCircleMBPS from '../components/CountCircleMBPS.vue';
+import CountCircleTV from '../components/CountCircleTV.vue';
 import FooterComponent from '../components/FooterComponent.vue'
 import HeaderComponent from '../components/HeaderComponent.vue'
 import { homeData } from '../data/home';
@@ -18,7 +20,7 @@ import { homeData } from '../data/home';
 						</div>
 					</div>
 					<div class="col-lg-6 p-0">
-							<img class="rounded-lg-3 img-fluid" src="/img/familia2.0.png" alt="">
+							<img class="rounded-lg-3 img-fluid" src="/img/familia2.0.webp" alt="">
 					</div>
 				</div>
     </div>
@@ -32,7 +34,7 @@ import { homeData } from '../data/home';
 			<div class="row g-3 mx-auto">
 				<div v-for="benfit in homeData.benfits" class="col-12 col-md-6 col-lg-3">
 					<div class="card h-100 d-flex border-color">
-						<div class="ratio ratio-1x1 w-50 mx-auto mt-4">
+						<div class="mx-auto mt-4" style="width: 120px;">
 							<img :src="benfit.img" class="card-img-top img-fluid" alt="...">
 						</div>
 						<div class="card-body text-center">
@@ -66,10 +68,7 @@ import { homeData } from '../data/home';
 							Plan {{ plan.nombre }}
 						</div>
 						<div class="card-body">
-							<div class="border-color plan-circle">
-								<span class="fw-bold fs-1 lh-1 text-color">{{ plan.mbps }}</span>
-            					<small>Mbps</small>
-							</div>
+							<CountCircleMBPS :value="Number(plan.mbps)" />
 							<div class="d-flex gap-2 justify-content-center mb-4 mb-lg-3 mt-3">
 								<div class="border icon-circle p-3">
 									<img src="/img/icono-internet.png" alt="" class="mx-auto" width="25">
@@ -103,10 +102,7 @@ import { homeData } from '../data/home';
 						{{ plan.nombre }}
 						</div>
 						<div class="card-body">
-							<div class="border-color plan-circle">
-								<span class="fw-bold fs-1 lh-1 text-color">{{ plan.canales }}</span>
-            					<small>Canales</small>
-							</div>
+							<CountCircleTV :value="Number(plan.canales)" />
 							<div class="d-flex gap-2 justify-content-center mb-4 mb-lg-3 mt-3">
 								<div class="border icon-circle p-3">
 									<img src="/img/icono-television.png" alt="" class="mx-auto" width="25">
