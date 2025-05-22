@@ -198,7 +198,7 @@ import { homeData } from '../data/home';
 							</div>
 						</div>
 					</div>
-					<button class="w-100 btn btn-lg btn-primary" type="submit">Regístrate</button>
+					<button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
 				</form>
 				</div>
 				<div class="col-12 col-xl-6">
@@ -339,12 +339,12 @@ import { homeData } from '../data/home';
 
 
 .btn-primary {
-	background-color: #396E4B;
+	background-color: #396E4B !important;
 	border: 1px solid	#396E4B !important;
 }
 
 .btn-primary:hover {
-	background-color: #ffffff;
+	background-color: #ffffff !important;
 	border: 1px solid	#396E4B !important;
 	color: #396E4B;
 }
